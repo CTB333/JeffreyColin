@@ -1,0 +1,75 @@
+.home {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 25px;
+}
+
+.font {
+  font-family: "Proxima Nova";
+  font-style: normal;
+}
+
+.headingBox {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+}
+
+.heading {
+  margin: 5px;
+  margin-bottom: 0;
+  padding: 0px;
+  font-size: 55px;
+}
+
+.subHeading {
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.subHeadingBox {
+  width: 1000px;
+}
+
+.projectHeading {
+  margin: 0;
+  margin-top: 15px;
+  font-size: 40px;
+}
+
+.projectBox {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.blue {
+  color: #2273de;
+}
+
+.yellow {
+  color: #f7c215;
+}
+
+.orange {
+  color: #f17229;
+}
+
+.red {
+  color: #d21236;
+}
+
+.grey {
+  color: #a4a5a1;
+}
+
+.spacer {
+  height: 340px;
+}
