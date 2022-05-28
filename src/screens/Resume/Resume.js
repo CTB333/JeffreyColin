@@ -19,13 +19,15 @@ const Resume = () => {
 
   return (
     <div className="resume">
-      <Document
-        file={pdf}
-        onLoadError={(e) => console.log(e)}
-        onLoadSuccess={docLoad}
-      >
-        <Page width={1000} pageNumber={pageNum} />
-      </Document>
+      <div className="pdfContainer">
+        <Document
+          file={pdf}
+          onLoadError={(e) => console.log(e)}
+          onLoadSuccess={docLoad}
+        >
+          <Page width={1000} pageNumber={pageNum} />
+        </Document>
+      </div>
     </div>
   );
 };
