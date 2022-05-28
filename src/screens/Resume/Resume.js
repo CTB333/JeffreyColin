@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 
-import { Document, Page, Text, View, StyleSheet } from "@react-pdf/renderer";
+import { Document, Page, pdfjs } from "react-pdf";
 
 import pdf from "../../assets/resume.pdf";
 
 import "../../App.css";
 import "./Resume.css";
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const Resume = () => {
   const [pageNum, setPageNum] = useState(1);
@@ -15,7 +17,17 @@ const Resume = () => {
     setPages(numPages);
   };
 
-  return <div className="resume"></div>;
+  return (
+    <div className="resume">
+      <Document
+        file={pdf}
+        onLoadError={(e) => console.log(e)}
+        onLoadSuccess={docLoad}
+      >
+        <Page width={1000} pageNumber={pageNum} />
+      </Document>
+    </div>
+  );
 };
 
 export default Resume;
