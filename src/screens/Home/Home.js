@@ -11,8 +11,10 @@ const Home = () => {
   return (
     <div className="home">
       <div className="headingBox">
-        <h3 className="heading proxima-bold">User experience designer</h3>
-        <h3 className="heading proxima-bold">
+        <h3 style={{ marginBottom: 10 }} className="heading proxima-normal">
+          User experience designer
+        </h3>
+        <h3 style={{ marginBottom: 20 }} className="heading proxima-normal">
           passionate about inclusive design.
         </h3>
       </div>
@@ -26,13 +28,15 @@ const Home = () => {
           UX Design Professional
         </p>
       </div>
-      <h3 className="projectHeading proxima-bold">Projects</h3>
+      <h3 className="projectHeading proxima-normal">Projects</h3>
       <div className="projectBox">
         {PROJECTS.map((v, i, _) => {
           let clickable = false;
+          let link = null;
 
           if (v.title === "MovieSeat" || v.title === "Michwich") {
             clickable = true;
+            link = "/projects/" + v.title;
           }
 
           return (
@@ -44,6 +48,7 @@ const Home = () => {
               tint={v.color}
               picture={v.imagePath}
               clickable={clickable}
+              link={link}
             />
           );
         })}

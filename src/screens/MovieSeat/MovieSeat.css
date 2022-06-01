@@ -1,0 +1,82 @@
+.movieRoot {
+  display: flex;
+  flex-direction: column;
+}
+.movieHeader {
+  width: 100%;
+  height: 535px;
+  position: relative;
+  margin: 0px;
+}
+.content {
+  margin: 0px 100px;
+  margin-top: 40px;
+  padding: 0px;
+}
+
+.personaBox {
+  margin-top: 42px;
+  padding: 0px 15px;
+}
+
+.persona {
+  margin-bottom: 90px;
+}
+
+.persona h3 {
+  margin-bottom: 15px;
+}
+
+.scenario {
+  margin: 25px 0px;
+}
+
+.slanted {
+  position: relative;
+}
+
+.coloredBack {
+  position: absolute;
+  bottom: 50vh;
+  left: -100px;
+  width: 150%;
+  height: 350vh;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+#half1 {
+  width: 100%;
+  flex: 1;
+  position: relative;
+}
+
+#half1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 14%, 100% 0, 100% 100%, 0 100%);
+  z-index: -1;
+  background-color: #2273de;
+}
+
+#half2 {
+  width: 100%;
+  flex: 1;
+  position: relative;
+}
+
+#half2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+  z-index: -1;
+  background-color: #2273de;
+}

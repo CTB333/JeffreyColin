@@ -3,6 +3,8 @@ import pakapala from "../assets/pakapala.png";
 import grabEats from "../assets/grabEats.png";
 import courtier from "../assets/courtier.png";
 import michWich from "../assets/michWich.png";
+import michWichLarge from "../assets/michWichFull.png";
+import movieSeatLarge from "../assets/movieSeatFull.png";
 
 export const COLORS = {
   red: "#d21236",
@@ -20,6 +22,7 @@ export const PROJECTS = [
     subText:
       "Giving movie-goers and film fanatics a thrilling experience before they get to the theater.",
     imagePath: movieSeat,
+    imageLarge: movieSeatLarge,
     color: COLORS.blue,
   },
 
@@ -30,6 +33,7 @@ export const PROJECTS = [
     subText:
       "Providing customers with healthy meals and the ability to view their orders whereabouts through a centralized application.",
     imagePath: michWich,
+    imageLarge: michWichLarge,
     color: COLORS.yellow,
   },
 

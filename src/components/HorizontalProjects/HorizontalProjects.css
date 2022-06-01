@@ -1,0 +1,14 @@
+.projectsTitle {
+  font-size: 36px;
+  margin-left: 25px;
+}
+
+.scrollHorizontal {
+  padding-top: 15px;
+  margin-left: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: scroll;
+}

@@ -5,13 +5,15 @@ import Circle from "../Circle/Circle";
 import "../../App.css";
 import "./ProjectCategory.css";
 
-const ProjectCategory = ({ text, circle }) => {
+const ProjectCategory = ({ text, circle, rootS, pS, circleS }) => {
   return (
-    <div className="categoryBox">
-      <p className="categoryText proxima-normal">{text}</p>
+    <div style={rootS} className="categoryBox">
+      <p style={pS} className="categoryText proxima-normal">
+        {text}
+      </p>
       {circle ? (
         <Circle
-          style={{ backgroundColor: "#a0aec0", marginLeft: 5 }}
+          style={{ backgroundColor: "#a0aec0", marginLeft: 5, ...circleS }}
           size={6}
         />
       ) : null}

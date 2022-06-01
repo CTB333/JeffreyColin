@@ -10,7 +10,7 @@ const AboutSection = ({ image, title, text }) => {
         <div className="sectionImg">
           <img src={image} alt={title} />
         </div>
-        <p className="sectionTitle proxima-bold">{title}</p>
+        <p className="sectionTitle proxima-normal">{title}</p>
       </div>
       <div className="textSection">
         <p className="sectionText proxima-normal">{text}</p>

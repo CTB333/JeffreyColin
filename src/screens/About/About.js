@@ -2,11 +2,10 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-import aboutMe from "../../assets/aboutme.png";
-import { AboutSection, SmallProject } from "../../components/index";
+import aboutMe from "../../assets/aboutMe.png";
+import { AboutSection, HorizontalProjects } from "../../components/index";
 
 import { Details as SECTIONS } from "../../Constants/About";
-import { PROJECTS } from "../../Constants/Projects";
 
 import "./About.css";
 import "../../App.css";
@@ -32,7 +31,7 @@ const About = () => {
         <div className="part">
           <div style={{ marginBottom: 30 }}>
             <p className="paragraph proxima-normal">
-              Born and raised in New York but currently residing in Florida I’m
+              Born and raised in New York but currently residing in Florida I'm
               a UX Designer who loves crafting big ideas. I love new challenges
               and strive to solve human problems with efficient products for
               users. I am passionate about creating meaningful experiences that
@@ -47,14 +46,14 @@ const About = () => {
             <p className="paragraph proxima-normal">
               UX has allowed to bridge the gap between my interests in art,
               psychology and technology to tackle a wide array of problems and
-              even better; create experiences with lasting impacts. I’m elated
+              even better; create experiences with lasting impacts. I'm elated
               and greatful that I have found UX. When I first discovered UX it
               felt like a calling.
             </p>
           </div>
           <div style={{ marginBottom: 30 }}>
             <p className="paragraph proxima-normal">
-              When I’m not designing I could be found: staying active, eating
+              When I'm not designing I could be found: staying active, eating
               healthy, traveling, taking photos/videos, spending time with
               family/friends and sadly looking at design/ tech trends, what can
               I say “I love what I do”.
@@ -68,7 +67,7 @@ const About = () => {
           <div>
             <Link
               style={{ color: "inherit", textDecoration: "inherit" }}
-              to="/"
+              to="/resume"
             >
               <p
                 style={{ color: "#62A4FB" }}
@@ -85,29 +84,8 @@ const About = () => {
           return <AboutSection image={v.img} title={v.title} text={v.text} />;
         })}
       </div>
-      <div className="projects">
-        <p className="projectsTitle proxima-normal">
-          Check out other projects:
-        </p>
-        <div className="scrollHorizontal">
-          {PROJECTS.map((v, i, _) => {
-            let clickable = false;
-
-            if (v.title === "MovieSeat" || v.title === "Michwich") {
-              clickable = true;
-            }
-
-            return (
-              <SmallProject
-                image={v.imagePath}
-                title={v.title}
-                text={v.subText}
-                tint={v.color}
-                clickable={clickable}
-              />
-            );
-          })}
-        </div>
+      <div>
+        <HorizontalProjects />
       </div>
       <div className="spacer"></div>
     </div>

@@ -3,11 +3,12 @@ import React, { useEffect, useState } from "react";
 import TintImage from "../TintImage/TintImage";
 import Icon from "@mui/material/Icon";
 import LockTwoToneIcon from "@mui/icons-material/LockTwoTone";
+import { Link } from "react-router-dom";
 
 import "../../App.css";
 import "./SmallProject.css";
 
-const SmallProject = ({ image, title, text, tint, clickable }) => {
+const SmallProject = ({ image, title, text, tint, clickable, link }) => {
   const [rootClass, setRootClass] = useState("smallProject");
 
   useEffect(() => {
@@ -19,6 +20,7 @@ const SmallProject = ({ image, title, text, tint, clickable }) => {
   return (
     <div className={rootClass}>
       <div className="smallImageBox">
+        {link ? <Link className="invisLink" to={link} /> : null}
         <TintImage
           image={image}
           tint={tint}
@@ -42,7 +44,10 @@ const SmallProject = ({ image, title, text, tint, clickable }) => {
         </TintImage>
       </div>
       <div className="textBox">
-        <h3 className="proxima-bold">{title}</h3>
+        <h3 style={{ position: "relative" }} className="proxima-normal">
+          {link ? <Link className="invisLink" to={link} /> : null}
+          {title}
+        </h3>
         <p className="proxima-normal">{text}</p>
       </div>
     </div>
