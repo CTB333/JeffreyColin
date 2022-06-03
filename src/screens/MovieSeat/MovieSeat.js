@@ -154,7 +154,7 @@ const listSeven = [
 ];
 
 const MovieSeat = () => {
-  // useLoad();
+  useLoad();
 
   const fs1 = {
     fontSize: 36,

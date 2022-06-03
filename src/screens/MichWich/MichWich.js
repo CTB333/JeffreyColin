@@ -221,7 +221,7 @@ const list13 = [
 ];
 
 const MichWich = () => {
-  // useLoad();
+  useLoad();
   const fs1 = {
     fontSize: 36,
   };
