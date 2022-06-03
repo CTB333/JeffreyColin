@@ -6,13 +6,14 @@ import Icon from "@mui/material/Icon";
 import DownloadIcon from "@mui/icons-material/Download";
 
 import pdf from "../../assets/resume.pdf";
+import useLoad from "../../hooks/useLoad";
 
-import "../../App.css";
 import "./Resume.css";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const Resume = () => {
+  useLoad();
   const docLoad = ({ numPages }) => {
     console.log(numPages);
   };

@@ -14,13 +14,12 @@
   justify-content: flex-start;
   margin: 0px;
   padding: 0px;
-  margin-bottom: 10px;
 }
 
 .sectionTitle {
   margin: 0px;
   padding: 0px;
-  font-size: 34px;
+  font-size: 36px;
   margin-left: 30px;
 }
 
@@ -33,4 +32,10 @@
   margin: 0px;
   padding: 0px;
   font-size: 24px;
+}
+
+.sectionImg {
+  width: 50px;
+  height: 50px;
+  margin-right: 25px;
 }

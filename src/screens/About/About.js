@@ -4,13 +4,14 @@ import { Link } from "react-router-dom";
 
 import aboutMe from "../../assets/aboutMe.png";
 import { AboutSection, HorizontalProjects } from "../../components/index";
+import useLoad from "../../hooks/useLoad";
 
 import { Details as SECTIONS } from "../../Constants/About";
 
 import "./About.css";
-import "../../App.css";
 
 const About = () => {
+  useLoad();
   return (
     <div className="aboutRoot">
       <div className="titleBox">
@@ -21,15 +22,12 @@ const About = () => {
           <div className="imgBox">
             <img src={aboutMe} alt="Me" />
           </div>
-          <p
-            style={{ fontSize: 33, marginTop: 5 }}
-            className="proxima-bold title"
-          >
+          <p className="proxima-normal title">
             What am I like outside of work?{" "}
           </p>
         </div>
         <div className="part">
-          <div style={{ marginBottom: 30 }}>
+          <div className="para-box">
             <p className="paragraph proxima-normal">
               Born and raised in New York but currently residing in Florida I'm
               a UX Designer who loves crafting big ideas. I love new challenges
@@ -42,7 +40,7 @@ const About = () => {
               create pain relievers.
             </p>
           </div>
-          <div style={{ marginBottom: 30 }}>
+          <div className="para-box">
             <p className="paragraph proxima-normal">
               UX has allowed to bridge the gap between my interests in art,
               psychology and technology to tackle a wide array of problems and
@@ -51,7 +49,7 @@ const About = () => {
               felt like a calling.
             </p>
           </div>
-          <div style={{ marginBottom: 30 }}>
+          <div className="para-box">
             <p className="paragraph proxima-normal">
               When I'm not designing I could be found: staying active, eating
               healthy, traveling, taking photos/videos, spending time with

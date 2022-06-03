@@ -5,43 +5,47 @@
   align-items: flex-start;
   justify-content: center;
   padding: 25px;
+  margin-top: 15px;
 }
 
-.font {
-  font-family: "Proxima Nova";
-  font-style: normal;
-}
-
-.headingBox {
+.home .headingBox {
   display: flex;
   flex-direction: column;
   margin: 0px;
   padding: 0px;
 }
 
-.heading {
+.home .heading {
   padding: 0px;
   font-size: 55px;
+  line-height: 56px;
 }
 
-.subHeading {
-  font-weight: 400;
-  font-size: 28px;
-}
-
-.subHeadingBox {
-  width: 1000px;
+.home .heading + .heading {
   margin-bottom: 20px;
 }
 
-.projectHeading {
+.home .subHeading {
+  font-size: 28px;
+}
+
+.home .subHeadingBox {
+  width: 1000px;
+  margin-bottom: 10px;
+}
+
+.home .subHeadingBox p {
+  line-height: 46px;
+}
+
+.home .projectHeading {
   margin: 0;
-  margin-top: 15px;
-  margin-bottom: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   font-size: 40px;
 }
 
-.projectBox {
+.home .projectBox {
   display: flex;
   width: 100%;
   align-items: center;
@@ -50,26 +54,26 @@
   flex-wrap: wrap;
 }
 
-.blue {
+.home .blue {
   color: #2273de;
 }
 
-.yellow {
+.home .yellow {
   color: #f7c215;
 }
 
-.orange {
+.home .orange {
   color: #f17229;
 }
 
-.red {
+.home .red {
   color: #d21236;
 }
 
-.grey {
+.home .grey {
   color: #a4a5a1;
 }
 
-.spacer {
+.home .spacer {
   height: 340px;
 }

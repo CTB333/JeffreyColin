@@ -2,7 +2,6 @@ import React from "react";
 
 import Circle from "../Circle/Circle";
 
-import "../../App.css";
 import "./List.css";
 
 const List = ({

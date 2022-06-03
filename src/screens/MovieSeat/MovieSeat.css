@@ -40,14 +40,27 @@
   bottom: 50vh;
   left: -100px;
   width: 150%;
-  height: 350vh;
+  height: 630vh;
   z-index: -1;
-  opacity: 0.3;
 }
 
 #half1 {
   width: 100%;
-  flex: 1;
+  flex: 0.51;
+  position: relative;
+}
+
+#half2 {
+  width: 100%;
+  flex: 0.3;
+  position: relative;
+  background-color: #f8f8f8;
+  z-index: -1;
+}
+
+#half3 {
+  width: 100%;
+  flex: 0.3;
   position: relative;
 }
 
@@ -58,15 +71,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  clip-path: polygon(0 14%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
   z-index: -1;
-  background-color: #2273de;
-}
-
-#half2 {
-  width: 100%;
-  flex: 1;
-  position: relative;
+  background-color: #f8f8f8;
 }
 
 #half2::after {
@@ -76,7 +83,21 @@
   left: 0;
   width: 100%;
   height: 100%;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+  clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
   z-index: -1;
   background-color: #2273de;
+  opacity: 0.3;
+}
+
+#half3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  z-index: -1;
+  background-color: #2273de;
+  opacity: 0.3;
 }

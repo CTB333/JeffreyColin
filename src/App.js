@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { Home, About, Resume, MovieSeat, MichWich } from "./screens/index";
-import { Header, Footer } from "./components/index";
+import { Header } from "./components/index";
 
 import "./App.css";
 
@@ -19,7 +19,6 @@ function App() {
           <Route path={"/projects/MovieSeat"} element={<MovieSeat />} />
           <Route path={"/projects/MichWich"} element={<MichWich />} />
         </Routes>
-        <Footer />
       </div>
     </Router>
   );

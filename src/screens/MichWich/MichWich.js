@@ -7,9 +7,10 @@ import {
   Circle,
   HorizontalProjects,
 } from "../../components/index";
+import useLoad from "../../hooks/useLoad";
+
 import { PROJECTS } from "../../Constants/Projects";
 
-import "../../App.css";
 import "./MichWich.css";
 
 import gradintCircles from "../../assets/gradientCircles.png";
@@ -220,6 +221,7 @@ const list13 = [
 ];
 
 const MichWich = () => {
+  // useLoad();
   const fs1 = {
     fontSize: 36,
   };
@@ -599,7 +601,7 @@ const MichWich = () => {
             </div>
             <div className="insight">
               <h3
-                style={{ ...fs4, marginBottom: 10 }}
+                style={{ ...fs4, margin: "0px 20px", marginBottom: 10 }}
                 className="proxima-normal"
               >
                 BUSY
@@ -646,7 +648,7 @@ const MichWich = () => {
             </div>
             <div className="insight">
               <h3
-                style={{ ...fs4, marginBottom: 10 }}
+                style={{ ...fs4, margin: "0px 20px", marginBottom: 10 }}
                 className="proxima-normal"
               >
                 REPEAT
@@ -835,7 +837,7 @@ const MichWich = () => {
               <span>too small</span> for them to see whats really going on.
             </p>
           </div>
-          <div className="insight">
+          <div style={{ margin: "0px 20px" }} className="insight">
             <h3 style={{ ...fs4, marginBottom: 10 }} className="proxima-normal">
               Font
             </h3>
@@ -865,7 +867,7 @@ const MichWich = () => {
               <span>card info, transaction history, and rewards.</span>
             </p>
           </div>
-          <div className="insight">
+          <div style={{ margin: "0px 20px" }} className="insight">
             <h3 style={{ ...fs4, marginBottom: 10 }} className="proxima-normal">
               Losing Track
             </h3>
@@ -1126,11 +1128,13 @@ const MichWich = () => {
           Thank You
         </p>
       </div>
-      <HorizontalProjects
-        titleS={{ marginBottom: 35 }}
-        rootS={{ width: "100%" }}
-        leaveOut={["Michwich"]}
-      />
+      <div style={{ margin: "0px 70px" }}>
+        <HorizontalProjects
+          titleS={{ marginBottom: 35 }}
+          rootS={{ width: "100%" }}
+          leaveOut={["Michwich"]}
+        />
+      </div>
     </div>
   );
 };

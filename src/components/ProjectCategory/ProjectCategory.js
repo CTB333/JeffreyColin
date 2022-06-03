@@ -2,7 +2,6 @@ import React from "react";
 
 import Circle from "../Circle/Circle";
 
-import "../../App.css";
 import "./ProjectCategory.css";
 
 const ProjectCategory = ({ text, circle, rootS, pS, circleS }) => {

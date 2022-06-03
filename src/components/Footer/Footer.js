@@ -1,15 +1,25 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Icon from "@mui/material/Icon";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import LanguageIcon from "@mui/icons-material/Language";
 
-import "../../App.css";
 import "./Footer.css";
 
 const Footer = () => {
+  let location = useLocation();
+  let navigate = useNavigate();
+
+  const navigateToHome = () => {
+    if (location.pathname == "/") {
+      window.scrollTo({ top: 275, left: 0, behavior: "smooth" });
+    } else {
+      navigate("/");
+    }
+  };
+
   return (
     <div className="footer">
       <div className="footerBox">
@@ -22,14 +32,10 @@ const Footer = () => {
           <p className="proxima-normal footerText">(424) 248-9047</p>
         </div>
 
-        <Link
-          className="footerTab"
-          style={{ color: "inherit", textDecoration: "inherit" }}
-          to="/"
-        >
+        <div onClick={navigateToHome} className="footerTab">
           <Icon style={{ fontSize: 30 }} component={LanguageIcon} />
           <p className="proxima-normal footerText">www.jefferymcolin.com</p>
-        </Link>
+        </div>
       </div>
     </div>
   );

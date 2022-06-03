@@ -1,20 +1,20 @@
 import React from "react";
 
-import { Project } from "../../components/index";
+import { Project, Footer } from "../../components/index";
+import useLoad from "../../hooks/useLoad";
 
 import { PROJECTS } from "../../Constants/Projects";
 
-import "../../App.css";
 import "./Home.css";
 
 const Home = () => {
+  useLoad();
+
   return (
     <div className="home">
       <div className="headingBox">
-        <h3 style={{ marginBottom: 10 }} className="heading proxima-normal">
-          User experience designer
-        </h3>
-        <h3 style={{ marginBottom: 20 }} className="heading proxima-normal">
+        <h3 className="heading proxima-normal">User experience designer</h3>
+        <h3 className="heading proxima-normal">
           passionate about inclusive design.
         </h3>
       </div>
@@ -54,6 +54,7 @@ const Home = () => {
         })}
       </div>
       <div className="spacer"></div>
+      <Footer />
     </div>
   );
 };

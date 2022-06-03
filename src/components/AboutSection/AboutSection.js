@@ -1,14 +1,13 @@
 import React from "react";
 
 import "./AboutSection.css";
-import "../../App.css";
 
 const AboutSection = ({ image, title, text }) => {
   return (
     <div className="aboutSectionRoot">
       <div className="sectionHeader">
         <div className="sectionImg">
-          <img src={image} alt={title} />
+          <img className="max-width max-height" src={image} alt={title} />
         </div>
         <p className="sectionTitle proxima-normal">{title}</p>
       </div>

@@ -5,7 +5,6 @@ import Icon from "@mui/material/Icon";
 import LockTwoToneIcon from "@mui/icons-material/LockTwoTone";
 import { Link } from "react-router-dom";
 
-import "../../App.css";
 import "./SmallProject.css";
 
 const SmallProject = ({ image, title, text, tint, clickable, link }) => {

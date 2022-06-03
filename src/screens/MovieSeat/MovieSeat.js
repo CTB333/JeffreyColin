@@ -7,6 +7,7 @@ import {
   List,
   HorizontalProjects,
 } from "../../components/index";
+import useLoad from "../../hooks/useLoad";
 
 import gradintCircles from "../../assets/gradientCircles2.png";
 
@@ -44,7 +45,6 @@ import mockup2 from "../../assets/mockup2.png";
 
 import ending from "../../assets/ending.png";
 
-import "../../App.css";
 import "./MovieSeat.css";
 
 const PROJECT = PROJECTS[0];
@@ -154,6 +154,8 @@ const listSeven = [
 ];
 
 const MovieSeat = () => {
+  // useLoad();
+
   const fs1 = {
     fontSize: 36,
   };
@@ -225,6 +227,7 @@ const MovieSeat = () => {
             let rootStyle = {
               minHeight: 200,
               flex: 0.3,
+              minWidth: 350,
             };
 
             if (i === 2) {
@@ -298,7 +301,7 @@ const MovieSeat = () => {
           marginBottom: 185,
         }}
       >
-        <img style={{ width: 1175 }} src={gradintCircles} alt="circles" />
+        <img style={{ width: "82%" }} src={gradintCircles} alt="circles" />
       </div>
       <div className="content">
         <p
@@ -395,12 +398,12 @@ const MovieSeat = () => {
         </p>
         <div style={{ margin: "30px 0px" }} className="center flex-column">
           <img
-            style={{ width: 680, margin: "65px 0px" }}
+            style={{ width: "55%", margin: "65px 0px" }}
             src={analysis}
             alt="analysis"
           />
           <img
-            style={{ width: 1100, marginTop: 130, marginBottom: 100 }}
+            style={{ width: "90%", marginTop: 130, marginBottom: 100 }}
             src={theatreCards}
             alt="Competitors"
           />
@@ -722,7 +725,7 @@ const MovieSeat = () => {
               }}
             >
               <img
-                style={{ imageRendering: "initial", width: 800 }}
+                style={{ imageRendering: "initial", width: "67%" }}
                 src={tasha}
                 alt="tasha"
               />
@@ -751,7 +754,7 @@ const MovieSeat = () => {
               }}
             >
               <img
-                style={{ imageRendering: "initial", width: 800 }}
+                style={{ imageRendering: "initial", width: "67%" }}
                 src={guershom}
                 alt="guershom"
               />
@@ -762,7 +765,7 @@ const MovieSeat = () => {
           Starting The Design
         </p>
         <div
-          style={{ position: "relative", margin: "150px 0px 278px" }}
+          style={{ position: "relative", margin: "150px 0px 225px" }}
           className="center flex-column"
         >
           <p
@@ -770,7 +773,6 @@ const MovieSeat = () => {
               ...color,
               fontSize: 45,
               letterSpacing: 4,
-              marginBottom: 22,
             }}
             className="proxima-normal"
           >
@@ -783,7 +785,7 @@ const MovieSeat = () => {
             and intuitive experience for users?
           </p>
           <img
-            style={{ width: 200, position: "absolute" }}
+            style={{ width: "17%", position: "absolute" }}
             src={question}
             alt="?"
           />
@@ -803,7 +805,7 @@ const MovieSeat = () => {
           style={{ margin: "100px 0px", marginBottom: 95 }}
           className="center"
         >
-          <img style={{ width: 1100 }} src={sitemap} alt="sitemap" />
+          <img style={{ width: "88%" }} src={sitemap} alt="sitemap" />
         </div>
         <p style={{ ...fs2, marginBottom: 43 }} className="proxima-normal">
           Paper Wireframes
@@ -823,8 +825,8 @@ const MovieSeat = () => {
           }}
           className="flex-row"
         >
-          <img style={{ width: 600 }} src={wireframe} alt="wireframe" />
-          <img style={{ width: 600 }} src={wireframe2} alt="wireframe" />
+          <img style={{ width: "47%" }} src={wireframe} alt="wireframe" />
+          <img style={{ width: "47%" }} src={wireframe2} alt="wireframe" />
         </div>
         <p style={{ ...fs2, marginBottom: 30 }} className="proxima-normal">
           Digital Wireframes
@@ -840,7 +842,7 @@ const MovieSeat = () => {
         </p>
         <div style={{ marginTop: 65, marginBottom: 55 }} className="center">
           <img
-            style={{ width: 975 }}
+            style={{ width: "78%" }}
             src={wireframe3}
             alt="digital wireframe"
           />
@@ -855,7 +857,7 @@ const MovieSeat = () => {
         </p>
         <div style={{ marginTop: 78, marginBottom: 55 }} className="center">
           <img
-            style={{ width: 975 }}
+            style={{ width: "78%" }}
             src={wireframe4}
             alt="digital wireframe"
           />
@@ -883,8 +885,8 @@ const MovieSeat = () => {
           }}
           className="flex-row"
         >
-          <img style={{ width: 850 }} src={wireframe5} alt="wireframe" />
-          <img style={{ width: 300 }} src={wireframe6} alt="wireframe" />
+          <img style={{ width: "69%" }} src={wireframe5} alt="wireframe" />
+          <img style={{ width: "25%" }} src={wireframe6} alt="wireframe" />
         </div>
         <p style={{ ...fs6, marginBottom: 70 }} className="proxima-normal">
           I added a banner and a carousel area for advertising. These 2 ad
@@ -1107,7 +1109,7 @@ const MovieSeat = () => {
             Before Usabillity
           </p>
           <img
-            style={{ width: 800, marginTop: 53, marginBottom: 105 }}
+            style={{ width: "70%", marginTop: 53, marginBottom: 105 }}
             src={wireframe7}
             alt="wireframe"
           />
@@ -1115,7 +1117,7 @@ const MovieSeat = () => {
             After Usabillity
           </p>
           <img
-            style={{ width: 800, marginTop: 40, marginBottom: 60 }}
+            style={{ width: "70%", marginTop: 40, marginBottom: 60 }}
             src={wireframe8}
             alt="wireframe"
           />
@@ -1147,7 +1149,7 @@ const MovieSeat = () => {
               Big Posters
             </p>
             <img
-              style={{ width: 1100, marginBottom: 20 }}
+              style={{ width: "90%", marginBottom: 20 }}
               src={computer}
               alt="computer"
             />
@@ -1172,7 +1174,7 @@ const MovieSeat = () => {
               Movie Info
             </p>
             <img
-              style={{ width: 1100, marginBottom: 5 }}
+              style={{ width: "90%", marginBottom: 5 }}
               src={computer2}
               alt="computer"
             />
@@ -1198,7 +1200,7 @@ const MovieSeat = () => {
               Seat Assignment
             </p>
             <img
-              style={{ width: 1100, marginBottom: 5 }}
+              style={{ width: "90%", marginBottom: 5 }}
               src={computer3}
               alt="computer"
             />
@@ -1235,7 +1237,7 @@ const MovieSeat = () => {
               Ticket Quanity
             </p>
             <img
-              style={{ width: 1100, marginBottom: 7 }}
+              style={{ width: "90%", marginBottom: 7 }}
               src={computer4}
               alt="computer"
             />
@@ -1257,12 +1259,13 @@ const MovieSeat = () => {
             }}
             className="flex-row"
           >
-            <img style={{ width: 850 }} src={mockup} alt="wireframe" />
-            <img style={{ width: 300 }} src={mockup2} alt="wireframe" />
+            <img style={{ width: "69%" }} src={mockup} alt="wireframe" />
+            <img style={{ width: "25%" }} src={mockup2} alt="wireframe" />
           </div>
           <div className="coloredBack flex-column">
             <div id="half1"></div>
             <div id="half2"></div>
+            <div id="half3"></div>
           </div>
         </div>
 
@@ -1310,13 +1313,16 @@ const MovieSeat = () => {
           pS={{ ...fs6 }}
         />
         <div style={{ marginBottom: 100 }} className="center flex-column">
-          <img style={{ width: 1200 }} src={ending} alt="thank you" />
+          <img style={{ width: "97%" }} src={ending} alt="thank you" />
           <p style={{ fontSize: 42, ...color }} className="proxima-normal">
             Thank You!
           </p>
         </div>
+      </div>
+      <div style={{ margin: "0px 70px" }}>
         <HorizontalProjects
           titleS={{ marginBottom: 35 }}
+          rootS={{ width: "100%" }}
           leaveOut={["MovieSeat"]}
         />
       </div>

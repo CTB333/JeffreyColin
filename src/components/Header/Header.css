@@ -3,12 +3,12 @@
   top: 0;
   left: 0;
   z-index: 5;
-  padding-top: 50px;
-  padding-bottom: 5px;
-  display: flex;
-  flex-direction: row;
+  height: 127px;
+  padding-left: 35px;
+  padding-right: 115px;
+  padding-bottom: 20px;
   background-color: white;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
@@ -28,33 +28,29 @@
 }
 
 .circleBox {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-left: 35px;
+  align-items: flex-end;
+}
+
+.circleBox div {
+  cursor: pointer;
   transition: transform 250ms;
 }
 
-.circleBox:hover {
+.circleBox div:hover {
   transform: scale(1.01);
 }
 
 .tabs {
-  margin: 30px 35px 20px 41px;
-  margin-right: 50px;
-  width: 30%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  width: 23%;
+  height: 100%;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .tab {
-  padding: 20px 0;
   font-size: 20px;
-  margin: 0px 30px;
   cursor: pointer;
+  height: 40%;
 }
 
 .tab:hover {
