@@ -7,7 +7,7 @@ import { PROJECTS } from "../../Constants/Projects";
 
 import "./Home.css";
 
-const Home = () => {
+const Home = ({}) => {
   useLoad();
 
   return (

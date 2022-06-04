@@ -1,19 +1,14 @@
 import React, { useEffect } from "react";
 
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import Circle from "../Circle/Circle";
 
 import "./Header.css";
 
-const Header = () => {
+const Header = ({}) => {
   let location = useLocation();
   let navigate = useNavigate();
-
-  useEffect(() => {
-    console.log("Location Change");
-    console.log(location);
-  }, [location]);
 
   const navigateToHome = () => {
     if (location.pathname == "/") {

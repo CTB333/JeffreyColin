@@ -4,6 +4,9 @@ body {
   padding: 0;
   margin: 0;
   padding-bottom: 100px;
+}
+
+body {
   overflow-x: hidden;
 }
 
