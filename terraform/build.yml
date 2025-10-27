@@ -16,4 +16,4 @@ applications:
       cache:
         paths:
           - .npm/**/*
-    appRoot: BigRealEstate/client
+    appRoot: UI
