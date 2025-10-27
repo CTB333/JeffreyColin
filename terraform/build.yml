@@ -10,7 +10,7 @@ applications:
             - REACT_APP_ENV=${REACT_APP_ENV}
             - npm run build
       artifacts:
-        baseDirectory: dist
+        baseDirectory: build
         files:
           - "**/*"
       cache:
