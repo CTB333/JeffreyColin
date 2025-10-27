@@ -14,19 +14,19 @@ variable "token" {
 variable "repository" {
   type        = string
   description = "github repo url"
-  default     = "https://github.com/Ckin111/RealEstateCRM" # "YOUR SOURCE-CODE REPO URL"
+  default     = "https://github.com/CTB333/JeffreyColin" # "YOUR SOURCE-CODE REPO URL"
 }
 
 variable "app_name" {
   type        = string
   description = "Application Name"
-  default     = "BigRealEstate"
+  default     = "JeffreyColin"
 }
 
 variable "app_root" {
   type        = string
   description = "AWS Amplify App Root Dir"
-  default     = "BigRealEstate/client"
+  default     = "UI"
 }
 
 variable "branch_name" {
