@@ -1,0 +1,59 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  height: 127px;
+  padding-left: 35px;
+  padding-right: 115px;
+  padding-bottom: 20px;
+  background-color: white;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.initial {
+  position: absolute;
+  left: 4px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+
+.full {
+  font-size: 28px;
+  margin-left: 20px;
+}
+
+.circleBox {
+  align-items: flex-end;
+}
+
+.circleBox div {
+  cursor: pointer;
+  transition: transform 250ms;
+}
+
+.circleBox div:hover {
+  transform: scale(1.01);
+}
+
+.tabs {
+  width: 23%;
+  height: 100%;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.tab {
+  font-size: 20px;
+  cursor: pointer;
+  height: 40%;
+}
+
+.tab:hover {
+  transform: translateY(-5px);
+  transition: transform 250ms;
+}

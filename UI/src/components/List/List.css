@@ -1,0 +1,21 @@
+.listRoot .title {
+  font-size: 30px;
+}
+
+.list {
+  margin: 0px;
+  padding: 0px;
+  padding-left: 15px;
+}
+
+.item {
+  padding: 0px;
+  margin: 0px;
+}
+
+.item p {
+  padding: 0px;
+  margin: 0px;
+  margin-left: 10px;
+  font-size: 24px;
+}

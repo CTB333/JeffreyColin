@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 8px;
+}
+
+.footerBox {
+  width: 56%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerTab {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerTab:hover {
+  transform: translateY(-5px);
+  transition: transform 250ms;
+}
+
+.footerText {
+  margin-left: 15px;
+  font-size: 20px;
+}

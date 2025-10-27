@@ -1,0 +1,15 @@
+.categoryBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 5px;
+}
+
+.categoryText {
+  padding: 0px;
+  margin: 0px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #a0aec0;
+}
